@@ -1,0 +1,27 @@
+.gridview{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 920px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.griditem div {
+
+    border: 1px solid #333;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 40px;    
+    box-sizing: border-box;    
+    position: absolute;    
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4) inset;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+    color: #fff;
+}
+.griditem {
+    position: absolute;
+}

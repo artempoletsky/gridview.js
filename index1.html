@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="src/css/index.css">
+        <script src="src/js/jquery-1.8.3.min.js"></script>
+        
+        
+        
+        <script>
+            $(function(){
+               var $gv=$(".gridview");
+               var template=$gv.html();
+               for(var i=0;i<1000;i++){
+                   var $new=$(template);
+                   $new.find("div").html(i);
+                   $gv.append($new);
+               }
+            });
+        </script>
+        <style>
+            .griditem{
+                float: left;
+                width: 182px;
+                height: 200px;
+                position: relative;
+            }
+            .gridview {
+                overflow: auto;
+            }
+        </style>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div class="gridview" >
+            <div class="griditem">
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
